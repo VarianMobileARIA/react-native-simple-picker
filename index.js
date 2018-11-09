@@ -218,7 +218,7 @@ class SimplePicker extends Component {
           transparent={true}
           visible={modalVisible}
           onRequestClose={this.onPressCancel}
-          supportedOrientations={['portrait', 'landscape']}
+          
         >
           {!disableOverlay &&
           <TouchableWithoutFeedback onPress={this.onOverlayDismiss}>
