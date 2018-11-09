@@ -208,6 +208,13 @@ class SimplePicker extends Component {
 
     return (
        <Modal
+			    supportedOrientations={[
+          "portrait",
+          "portrait-upside-down",
+          "landscape",
+          "landscape-left",
+          "landscape-right"
+        ]}
           transparent={true}
           visible={modalVisible}
           onRequestClose={this.onPressCancel}
