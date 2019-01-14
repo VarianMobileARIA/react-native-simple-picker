@@ -13,7 +13,6 @@ import {
 	Dimensions,
 	TouchableWithoutFeedback,
   Animated,
-	SafeAreaView,
   Platform,
 } from 'react-native'; // eslint-disable-line
 
