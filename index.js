@@ -1,4 +1,5 @@
 import React, { Component } from 'react'; // eslint-disable-line
+import SafeAreaView from 'react-native-safe-area-view';
 
 import PropTypes from 'prop-types';
 
@@ -225,7 +226,7 @@ class SimplePicker extends Component {
             <View style={this.styles.overlayContainer}/>
           </TouchableWithoutFeedback>
           }
-			<SafeAreaView>
+			<SafeAreaView forceInset={ {left: 'always', right: 'always'} }>
           <Animated.View style={[this.styles.modalContainer, transformStyle]}>
             <View style={this.styles.buttonView}>
               <TouchableOpacity onPress={this.onPressCancel}>
